@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, initializeIcons } from '@fluentui/react';
 import { Card } from '@uifabric/react-cards';
+
 // import 'office-ui-fabric-react/dist/css/fabric.css';
 
 const container = {
@@ -80,7 +81,7 @@ const CardsSection = () => {
           <Card styles={styles.cardStyles}>
             <Card.Section>
               <Card.Item>
-                {/* { <i style={icon} className={ms-Icon ms-Icon--${card.icon} } aria-hidden="true"></i> } */}
+                { <i style={icon} className={`ms-Icon ms-Icon--${card.icon}`} aria-hidden="true"></i> }
                 <Text styles={styles.header}>{card.title}</Text>
               </Card.Item>
               <Card.Item>

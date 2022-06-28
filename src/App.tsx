@@ -6,7 +6,7 @@ import CardsSection from './CardsSection';
 import OperationsTable from './OperationsTable';
 
 function App() {
-  return (
+  return ( 
     <div className="ms-Grid" dir="ltr">
       <div className="ms-Grid-row">
         <div className="ms-Grid-col ms-sm1 ms-xl1">

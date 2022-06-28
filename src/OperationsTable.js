@@ -1,6 +1,13 @@
 import React from 'react';
 import { DetailsList } from '@fluentui/react';
+import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 
+
+const classNames = mergeStyleSets({
+  table: {
+    margin: 'auto',
+  }
+});
 
 const operations = [
   {
@@ -45,7 +52,7 @@ const columns = [
 const OperationsTable = () => {
   return (
     <div data-is-scrollable={true}>
-      <div>
+      <div className={`s-Grid-col ms-sm9 ms-xl9 ${classNames.table}`}>
         <DetailsList
           items={operations}
           columns={columns}
